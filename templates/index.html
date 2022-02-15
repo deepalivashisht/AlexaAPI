@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript">// <![CDATA[ 
+    function loading() {
+      $("#loading").show();
+      $("#content").hide();
+    }
+// ]]></script>
+  <title>Alexa</title>
+
+  <style>
+    .heading {
+      color: #212121;
+    }
+
+    .page th {
+      background-color: #add8e6;
+      color: white;
+    }
+
+    body {
+      background-color: #FFFFFF;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    div#loading {
+      width: 1700px;
+      height: 35px;
+      display: none;
+      background: #212121;
+      cursor: wait;
+    }
+    .center1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Alexa</a>
+    </div>
+  </nav>
+  <div>
+    <form method="POST" action="/" enctype="multipart/form-data">
+      <button type="submit" class="btn btn-primary button_add"
+        style="margin: 0 auto; margin-top: 10%; display: block; background-color: #504f4f;border-color: #504f4f; border-radius: 12px;width:80px;"><i
+          class="fa fa-microphone"></i></button>
+      <h1 class="heading center1">Tap to Speak</h1>
+    </form>
+    <form method="GET" action="/" enctype="multipart/form-data">
+    </form>
+    <br>
+    <div id="loading"><br>
+      <p class="heading"> Please wait </p>
+    </div>
+    <br>
+  </div>
+
+</body>
+
+</html>
